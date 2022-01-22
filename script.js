@@ -9,7 +9,6 @@ searchBtn.addEventListener('click', searchWiki);
 // search wiki
 function searchWiki(event) {
  event.preventDefault();
- showGif('show')
  let searchValue = input.value;
 
  const origin = "https://en.wikipedia.org";
@@ -25,26 +24,11 @@ function searchWiki(event) {
  })
 
 }
-// show/hide gif
-
-function showGif(value) {
- if (value === 'show') {
-  document.querySelector('.wait-icon').classList.add('show')
- }
- else if (value === 'hide') {
-  document.querySelector('.wait-icon').classList.remove('show')
-
- }
-}
 // display Data
 
 function displayData(data) {
- // console.log(data);
- showGif('hide')
  let result = data.query.search;
  console.log(result);
-
- 
  let output = '';
  result.forEach(function (item) {
   output += `<li class="search-item">

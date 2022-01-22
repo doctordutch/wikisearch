@@ -2,26 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
    }
    :root{
-    --lightOrange:#fbc4ab;
+    --lightOrange:#3615ad;
     --lightGreen:#bbe1c3;
-    --brown:#91785d;
-    --darkGreen:#869d7a;
+    --brown:#2032a7;
+    --darkGreen:#194401;
    }
    body{
+    font-family: Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 80%;
     justify-content: center;
     margin-top: 3rem;
    text-align: center;
-   background: var(--lightOrange);
+   background: linear-gradient(to right, #ffffff, #08f73c);
    }
    .main-search{
     width: 100%;
     background: transparent;
     border:none;
-    border-bottom: 0.25rem solid var(--brown);
+    border-bottom: 0.25rem solid black;
     font-size: 3rem;
     margin: 1rem 0;
     padding: 0.5rem 0;
@@ -38,13 +40,13 @@
     text-transform: capitalize;
     background: transparent;
     color: var(--brown);
-    border:0.15rem solid var(--brown);
+    border:0.15rem solid black;
     transition: all 0.3s linear;
     outline: none;
    }
    .main-btn:hover{
     background: var(--brown);
-    color:var(--lightOrange);
+    color:black;
    }
    .wait-icon{
     display: none;
@@ -59,27 +61,25 @@
     border:0.05rem solid var(--darkGreen);
     padding: 1rem;
     margin: 1rem 0;
-    background: #faf3dd;
+    background: transparent;
     border-radius: 0.5rem;
     box-shadow: 0px 10px 10px var(--darkGreen);
    }
    
    .search-item__title{
     text-transform: uppercase;
-    letter-spacing: 0.4rem;
    }
    .search-item__text{
     margin: 0.5rem 0;
-    letter-spacing: 0.3rem;
    }
    .search-item__link{
     text-decoration: none;
-    color: var(--brown);
-    font-size: 1.2rem;
+    color: black;
+    font-size: .8rem;
     transition: all 0.2s ease-in-out;
    }
    .search-item__link:hover{
-    color: #faf3dd;
+    color: #02581c;
    }
    @media screen and (min-width:992px){
     .results{
